@@ -1,26 +1,26 @@
 import './style.css';
 
 const array = [
-    {
-        description: 'Make the bed',
-        completed: true,
-        index: 4,
-    },
-    {
-        description: 'Clean the house',
-        completed: false,
-        index: 2,
-    },
-    {
-        description: 'Bath',
-        completed: false,
-        index: 1,
-    },
-    {
-        description: 'Cook',
-        completed: true,
-        index: 3,
-    },
+  {
+    description: 'Make the bed',
+    completed: true,
+    index: 4,
+  },
+  {
+    description: 'Clean the house',
+    completed: false,
+    index: 2,
+  },
+  {
+    description: 'Bath',
+    completed: false,
+    index: 1,
+  },
+  {
+    description: 'Cook',
+    completed: true,
+    index: 3,
+  },
 ];
 
 array.sort((a, b) => a.index - b.index);
