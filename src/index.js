@@ -2,37 +2,37 @@ import './style.css';
 
 const array = [
     {
-        description: 'Wash plate',
-        completed: false,
-        index: 0,
+        description: 'Make the bed',
+        completed: true,
+        index: 4,
     },
     {
-        description: 'Wash plate',
+        description: 'Clean the house',
         completed: false,
-        index: 0,
+        index: 2,
     },
     {
-        description: 'Wash plate',
+        description: 'Bath',
         completed: false,
-        index: 0,
-    }
+        index: 1,
+    },
+    {
+        description: 'Cook',
+        completed: true,
+        index: 3,
+    },
 ];
 
-const guestSpeakers = document.querySelector('.speakers-container');
+array.sort((a, b) => a.index - b.index);
 
-for (let i = 0; i < speakers.length; i += 1) {
-  let visibleImg = 'show';
-  if (i > 1) {
-    visibleImg = 'hide';
-  }
-  guestSpeakers.innerHTML += `
-  <div class="${visibleImg} speakers" id="speak">
-    <div><img src="${speakers[i].speakerImg}" alt="image"></div>
-            <div class="speaker-info">
-            <h3>${speakers[i].speakerName}</h3>
-            <h4>${speakers[i].speakerPost}</h4>
-            <span class="speaker-bar"></span>
-            <p>${speakers[i].speakerInfo}</p>         
-             </div>
-             </div>`;
+const toDo = document.querySelector('.to-do-items');
+for (let i = 0; i < array.length; i += 1) {
+  toDo.innerHTML += `
+  <div class="list-items"
+    <div>
+    <input type="checkbox"> 
+    <input class="desc" value="${array[i].description}">
+    <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+    </div>
+    </div>`;
 }

@@ -1,60 +1,78 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 2rem;
-    width: 100%;
-    background-color: whitesmoke;
+  margin: 2rem;
+  width: 100%;
+  background-color: whitesmoke;
 }
 
 section {
-    background-color: #fff;
-    margin: 24px auto;
-    width: 50%;
-    box-shadow: 2px 2px whitesmoke;
+  background-color: #fff;
+  margin: 24px 12px;
+  width: 80%;
+  box-shadow: 2px 2px whitesmoke;
 }
 
 .title {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid gray;
 }
 
 h1 {
-    padding: 2%;
-    font-weight: 300;
+  padding: 2%;
+  font-weight: 300;
 }
 
 button {
-    background-color: white;
-    border: none;
-    padding: 2%;
+  background-color: white;
+  border: none;
+  padding: 2%;
 }
 
 .add-list {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid grey;
-} 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+}
 
 input {
-    border: none;
-    background-color: #fff;
+  border: none;
+  background-color: #fff;
 }
 
 .btn-clear {
-   background-color:rgb(152, 149, 149);;
+  background-color: rgb(152, 149, 149);
 }
 
 .btn-clear button {
-    padding: 1rem;
-    margin: 0 auto;
-    display: block;
-    background-color: rgb(152, 149, 149);
+  padding: 1rem;
+  margin: 0 auto;
+  display: block;
+  background-color: rgb(152, 149, 149);
 }
+
+.list-items {
+  padding: 12px 18px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.desc {
+    padding-right: 35rem;
+}
+
+
+
+
+
