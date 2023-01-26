@@ -1,38 +1,14 @@
 import './style.css';
+import Tasks from './modules/task.js';
 
-const array = [
-  {
-    description: 'Make the bed',
-    completed: true,
-    index: 4,
-  },
-  {
-    description: 'Clean the house',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Bath',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Cook',
-    completed: true,
-    index: 3,
-  },
-];
+const addBtn = document.querySelector('#add-btn');
+addBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const description = document.querySelector('#add-task').value;
+  const newTask = new Tasks(description);
+  newTask.addTask(description);
+});
 
-array.sort((a, b) => a.index - b.index);
-
-const toDo = document.querySelector('.to-do-items');
-for (let i = 0; i < array.length; i += 1) {
-  toDo.innerHTML += `
-  <div class="list-items"
-    <div>
-    <input type="checkbox"> 
-    <input class="desc" value="${array[i].description}">
-    <button class="btn-more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-    </div>
-    </div>`;
-}
+// render the tasks from local storage on page load
+const tasks = new Tasks();
+tasks.render();
