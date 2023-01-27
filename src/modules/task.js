@@ -18,6 +18,7 @@ export default class Tasks {
       localStorage.setItem('array', JSON.stringify(array));
       document.querySelector('.message').innerHTML = '*Added new task successfully';
       this.render();
+      window.location.reload();
       document.querySelector('#add-task').value = '';
     }
   }
@@ -47,12 +48,17 @@ export default class Tasks {
         toDo.innerHTML += `
         <div class="list-items" data-index="${array[i].index}">
           <div class="task-container">
-            <input class="checkbox" type="checkbox"> 
+            <input class="checkbox-tick" type="checkbox">
             <input class="checkbox" class="desc" value="${array[i].description}">
           </div>
           <button class="btn-more remove"><i class="fa-solid fa-ellipsis-vertical"></i></button>
         </div>`;
       }
+    }
+
+    const checkboxes = document.querySelectorAll('.checkbox-tick');
+    for (let i = 0; i < array.length; i += 1) {
+      checkboxes[i].checked = array[i].completed;
     }
 
     // add event listener to remove button
