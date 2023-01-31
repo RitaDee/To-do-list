@@ -175,7 +175,7 @@ Example command:
 
 To run the project, execute the following command:
 - Open the cloned folder on the VS code
-- Open the live server
+- Open the live server.
 
 
 <!--
@@ -222,7 +222,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
  👤**Rita Nkem Daniel**
 
