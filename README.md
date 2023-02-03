@@ -103,7 +103,7 @@ After you're finished please remove all the comments and instructions!
 - **[Added an event listener to the checkbox (change).]**
 - **[Implement a function to update items object's value for completed key upon user actions]**
 - **[Implement a function for the "Clear all completed" button using (use filter() method)]**
-- **[Implement testing to Add and delete task class method]**
+- **[Implement testing to Add, delete, update and clear complete task class method]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
