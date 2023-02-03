@@ -60,8 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [To do list] <a name="about-project"></a>
 
-**[To do list]**  is used to display and remind us of what we have to do and equally delete the completed task.
-
+**[To do list]** is used to display and remind us of what we have to do and equally delete the completed task.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -96,7 +95,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-
 - **[Use webpack to bundle JavaScript]**
 - **[Create a new JavaScript file for the new functionality.]**
 - **[Implement a function for adding a new task (add a new element to the array).]**
@@ -106,9 +104,7 @@ After you're finished please remove all the comments and instructions!
 - **[Implement a function to update items object's value for completed key upon user actions]**
 - **[Implement a function for the "Clear all completed" button using (use filter() method)]**
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LIVE DEMO -->
 
@@ -141,7 +137,8 @@ Example command:
 ```sh
  gem install rails
 ```
- -->
+
+-->
 
 ### Setup
 
@@ -158,8 +155,9 @@ Example commands:
 ### Install
 
 Install this project with:
+
 - cd my-folder
--  git clone git@github.com:RitaDee/To-do-list.git
+- git clone git@github.com:RitaDee/To-do-list.git
 
 install npx
 
@@ -169,14 +167,15 @@ Example command:
   cd my-project
   npx install
 ```
+
 --->
 
 ### Usage
 
 To run the project, execute the following command:
+
 - Open the cloned folder on the VS code
 - Open the live server.
-
 
 <!--
 Example command:
@@ -189,7 +188,8 @@ Example command:
 ### Run tests
 
 To run tests, run the following command:
-- To check for stylelint errors, run npx stylelint "**/*.css{css,scss}".
+
+- To check for stylelint errors, run npx stylelint "\*_/_.css{css,scss}".
 - To check for javascript error, run npx eslint .
 
 <!--
@@ -203,6 +203,7 @@ Example command:
 ### Deployment
 
 You can deploy this project using:
+
 - Github pages
 
 Github pages
@@ -214,7 +215,8 @@ Example:
 ```sh
 
 ```
- -->
+
+-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,20 +224,22 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-
- 👤**Rita Nkem Daniel**
+👤**Rita Nkem Daniel**
 
 - GitHub: [@RitaDee](https://github.com/RitaDee)
 - Twitter: [@durdana_dee](https://twitter.com/durdana_dee)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rita-daniel/)
 
+👤**Daniel Majesty Owiri**
+
+- GitHub: [@RitaDee](https://github.com/DannieMo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/daniel-majesty-owiri/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,7 +256,6 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -277,8 +280,6 @@ I would like to appreciate [Microverse](https://www.microverse.org/) for providi
   - **[Can you make the website responsive]**
 
   - [Yes]
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
