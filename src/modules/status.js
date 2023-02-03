@@ -11,18 +11,18 @@ export default class Status {
       ? { ...arr, completed: !arr.completed }
       : { ...arr }));
     localStorage.setItem('array', JSON.stringify(updatedArray));
-    window.location.reload();
-    this.task.render();
   }
 
-  clearCompleted() {
+  clearCompleted(includedInFunction = true) {
     this.array = JSON.parse(localStorage.getItem('array')) || [];
     this.array = this.array.filter((task) => task.completed === false);
     this.array.forEach((task, i) => {
       task.index = i + 1;
     });
+
     localStorage.setItem('array', JSON.stringify(this.array));
-    window.location.reload();
-    this.task.render();
+    if (includedInFunction) {
+      window.location.reload();
+    }
   }
 }

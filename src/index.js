@@ -24,9 +24,11 @@ Array.from(checkboxes).forEach((checkbox) => {
   checkbox.addEventListener('change', (event) => {
     const index = parseInt(event.target.parentElement.parentElement.getAttribute('data-index'), 10);
     status.updateStatus(index);
+    window.location.reload();
     render();
   });
 });
+
 const clearCompletedBtn = document.querySelector('.clear-completed');
 clearCompletedBtn.addEventListener('click', () => {
   status.clearCompleted();
@@ -40,5 +42,18 @@ removeButtons.forEach((button) => {
     const index = parseInt(event.target.parentElement.parentElement.getAttribute('data-index'), 10);
     tasks.removeTask(index);
     render();
+  });
+});
+
+const inputs = document.querySelectorAll('.checkbox');
+inputs.forEach((input) => {
+  input.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const index = Number(input.parentNode.parentNode.getAttribute('data-index'));
+      tasks.editTask(index, input.value);
+      window.location.reload();
+      render();
+    }
   });
 });

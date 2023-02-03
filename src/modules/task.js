@@ -31,9 +31,18 @@ export default class Tasks {
     localStorage.setItem('array', JSON.stringify(newArray));
   }
 
+  // editTask(index, newDescription) {
+  //   const taskToEdit = this.find((task) => task.index === index);
+  //   taskToEdit.description = newDescription;
+  //   localStorage.setItem('array', JSON.stringify(this));
+  // }
+
   editTask(index, newDescription) {
-    const taskToEdit = this.find((task) => task.index === index);
+    this.index = index;
+    const array = JSON.parse(localStorage.getItem('array')) || [];
+    // const tasks = Array.from(this);
+    const taskToEdit = array.find((task) => task.index === index);
     taskToEdit.description = newDescription;
-    localStorage.setItem('array', JSON.stringify(this));
+    localStorage.setItem('array', JSON.stringify(array));
   }
 }
